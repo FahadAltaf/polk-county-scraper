@@ -39,7 +39,7 @@ namespace Upwork.LeviFreedman.polkcountyiowa
             List<DataModel> records = new List<DataModel>();
             try
             {
-                var client = new RestClient("https://apps.polkcountyiowa.gov/");
+                var client = new RestClient("https://socms.polkcountyiowa.gov/");
                 var request = new RestRequest("sheriffsaleviewer/Home/PropertyListJson", Method.POST);
                 request.AddParameter("draw", 1);
                 request.AddParameter("start", 0);
